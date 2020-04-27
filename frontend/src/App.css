@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+.App,
+body {
+  background-color: #eceff4;
+  color: #2e3440;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+.container-header,
+.container-footer {
+  background-color: #e5e9f0;
+}
+
+.container-question {
+  background-color: #d8dee9;
+}
+
+.container-answer {
+  background-color: #d8dee9;
+  width: 90%;
+  margin-left: 40px !important;
+}

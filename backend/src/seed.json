@@ -1,0 +1,68 @@
+[
+	{
+		"id": "0c45135f-4ed9-4670-b65a-153d4236d3a5",
+		"title": "Question 1",
+		"content": "Content question 1",
+		"userName": "neto",
+		"likes": 10,
+		"dislikes": 2,
+		"createdAt": 1587742404414,
+		"answers": [
+			{
+				"id": 1,
+				"content": "Content answer 1",
+				"userName": "antonio",
+				"likes": 0,
+				"dislikes": 0,
+				"createdAt": 1587742479299
+			},
+			{
+				"id": 2,
+				"content": "Content answer 2",
+				"userName": "neto",
+				"likes": 0,
+				"dislikes": 0,
+				"createdAt": 1587742488342
+			}
+		]
+	},
+	{
+		"id": "fd28e172-202b-4e77-a6d1-0dc8917b0d22",
+		"title": "Question 2",
+		"content": "Content question 2",
+		"userName": "neto",
+		"likes": 0,
+		"dislikes": 0,
+		"createdAt": 1587742416525,
+		"answers": []
+	},
+	{
+		"id": "f835218c-8f03-4e2d-9a79-53e3c94ccb92",
+		"title": "Question 3",
+		"content": "Content question 3",
+		"userName": "antonio",
+		"likes": 0,
+		"dislikes": 0,
+		"createdAt": 1587742432483,
+		"answers": [
+			{
+				"id": 1,
+				"content": "Content answer 3",
+				"userName": "josy",
+				"likes": 0,
+				"dislikes": 0,
+				"createdAt": 1587742530062
+			}
+		]
+	},
+	{
+		"id": "b1cf498c-2d03-49f2-b2bc-d8e2d48df37b",
+		"title": "Question 4",
+		"content": "Content question 4",
+		"userName": "josy",
+		"likes": 0,
+		"dislikes": 0,
+		"createdAt": 1587742440848,
+		"answers": []
+	}
+]

@@ -1,0 +1,7 @@
+.titulo {
+  font-size: 2em;
+}
+
+.buttonSearch {
+  background-color: var(--nord5);
+}
