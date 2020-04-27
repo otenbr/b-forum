@@ -2,6 +2,8 @@
 
 Projeto de backend para um solução para interação entre usuários através da postagem de perguntas e respostas.
 
+Link para documentação da API: https://documenter.getpostman.com/view/5378907/SzfCTRCK
+
 ## Começando
 
 ### Pré-requisitos

@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "d6cc576a-3574-40ef-b35f-cac5a9e78189",
+		"name": "Posts",
+		"description": "Pasta com exemplos de requisições para teste da API do backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Answers",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"content\": \"Content answer 01, post 01\",\n\t\"userName\": \"antonio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/posts/5ea62ee33ca2656405989c74/answers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"posts",
+								"5ea62ee33ca2656405989c74",
+								"answers"
+							]
+						},
+						"description": "Inclusão de respostas"
+					},
+					"response": []
+				},
+				{
+					"name": "LikeAnswer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/posts/5ea62ee33ca2656405989c74/answers/5ea62f223ca2656405989c77/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"posts",
+								"5ea62ee33ca2656405989c74",
+								"answers",
+								"5ea62f223ca2656405989c77",
+								"like"
+							]
+						},
+						"description": "Atualização do contador de likes"
+					},
+					"response": []
+				},
+				{
+					"name": "DislikeAnswer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/posts/5ea62ee33ca2656405989c74/answers/5ea62f223ca2656405989c77/dislike",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"posts",
+								"5ea62ee33ca2656405989c74",
+								"answers",
+								"5ea62f223ca2656405989c77",
+								"dislike"
+							]
+						},
+						"description": "Atualização do contador de dislikes"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/posts?title=&answered=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": ""
+						},
+						{
+							"key": "answered",
+							"value": ""
+						}
+					]
+				},
+				"description": "Listagem de posts. Permite filtrar por nome e se já foi respondida."
+			},
+			"response": []
+		},
+		{
+			"name": "ListId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/posts/5ea62ee33ca2656405989c74",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"posts",
+						"5ea62ee33ca2656405989c74"
+					]
+				},
+				"description": "Listagem de post por id"
+			},
+			"response": []
+		},
+		{
+			"name": "Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Title post 01\",\n\t\"content\": \"Content post 01\",\n\t\"userName\": \"neto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/posts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"posts",
+						""
+					]
+				},
+				"description": "Inclusão de posts"
+			},
+			"response": []
+		},
+		{
+			"name": "LikePost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/posts/5ea62ee33ca2656405989c74/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"posts",
+						"5ea62ee33ca2656405989c74",
+						"like"
+					]
+				},
+				"description": "Atualização do contador de likes"
+			},
+			"response": []
+		},
+		{
+			"name": "DislikePost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/posts/5ea62ee33ca2656405989c74/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"posts",
+						"5ea62ee33ca2656405989c74",
+						"like"
+					]
+				},
+				"description": "Atualização do contador de dislikes"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8ce30f61-8f35-4fdf-9e13-7e91883bb0da",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2f3d7fb0-e364-4553-9d99-47162e8106c2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
